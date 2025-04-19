@@ -1,0 +1,6 @@
+
+    MODIFICADORES
+
+i   - Case-insensitive matching
+g   - Global matching
+m   - Multiline matching

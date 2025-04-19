@@ -1,0 +1,8 @@
+
+        QUANTIFICADORES - PARTE 1
+
+Os quantificadores podem ser aplicados a caracteres, grupos, conjuntos ou metacaracteres.
+
+{n}     - Quantifica um número específico
+{n, }   - Quantifica um número mínimo
+{n,m}   - Quantifica um número mínimo e um número máximo

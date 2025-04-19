@@ -1,0 +1,27 @@
+        Comandos git
+
+-> git init  | (init um repositorio, significa que as mudanças do diretoria serão controladas)
+
+-> git status  | (Verifica os arquivos alterados para comitar)
+
+-> git add nome-do-arquivo | (coloca o arquivo para dentro da staging area)
+
+-> git commit -m "mensagem para o comit" | (salva as mudanças, comita o codigo)
+
+-> git log | (lista todos os comits)
+
+-> git log --oneline
+
+-> git branch node-do-branch | (Para criar uma branch, ramificação)
+
+-> git branch | (Lista os branch do repositório)
+
+-> git merce nome-da-branch | (Para juntar o codigo de duas branches)
+
+-> git diff nome-do-arquivo | (exibe as mudanças que ocorram no arquivo)
+
+-> git chekckout -b | (criar uma branch paralela a original)
+
+-> git chekckout | (entrar na branch)
+
+-> 

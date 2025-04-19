@@ -1,0 +1,8 @@
+
+        QUANTIFICADORES - PARTE 2
+
+Os quantificadores podem ser aplicados a caracteres, grupos, conjuntos ou metacaracteres.
+
+?   - Zero ou um
+*   - Zero ou mais
++   - Um ou mais

@@ -1,0 +1,7 @@
+
+        GRUPOS DE CARACTERES
+
+[abc]   - Aceita qualquer caractere dentro do grupo, nesse caso a, b e c
+[^abc]  - Não aceita qualquer caractere dentro do grupo, nesse caso a, b ou c
+[0-9]   - Aceita qualquer caractere entre 0 e 9
+[^0-9]  - Não aceita qualquer caracter entre 0 e 9
