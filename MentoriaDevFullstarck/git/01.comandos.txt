@@ -20,8 +20,16 @@
 
 -> git diff nome-do-arquivo | (exibe as mudanças que ocorram no arquivo)
 
--> git chekckout -b | (criar uma branch paralela a original)
+-> git add . (O ponto coloca todos na stanging area)
 
--> git chekckout | (entrar na branch)
+-> git chekckout -b nome-da-nova-branch | (criar uma branch paralela a original)
 
--> 
+-> git chekckout nome-da-branch| (entrar na branch)
+
+-> git push (Manda os commit local para o remoto)
+
+-> git pull (Puxa os commit remoto para o local)
+
+-> git stash (Salva os arquivos alterados em uma area de rascunhos para serem usados depois)
+
+-> git stash apply (Retorna o código que estava na lista de rascunhos)

@@ -1,0 +1,180 @@
+Java Basico
+--------------------------
+
+- Podemos ter mais de uma clsse em um arquivo
+- Apenas uma clase publica por arquivo
+- O nome do arquivo deve ser igual ao da classe publica
+- Toda classe deve iniciar com letra maiuscula
+- Nome de classes e variaveis devem sempre que possivel, ser no singular
+- Todo programa java deve conter um metodo de inicializacao que é o metodo main
+- Erros em tempo de compilacao e erros em tempo de execucao
+- Não perdoa erros
+- Linguagem fortemente tipada
+- Cada enum deve ser considerado como uma variavel estática
+- Classe: Como se fosse a fôrma pra fazer um bolo
+    - Caracteristicas (nome cliente, saldo, documento, dataNascimento)
+    - Comportamento (sacar, depositar, transferiri, encerrar)
+- Objetos: Como se fosse o bolo que sai da fôrma
+- Mebros: são as variaveis acessiveis via objetos
+- Encapsulamneto: devemos proteger as variaveis membros utilizando getters e setters
+    - get --> para obter o valor da variavel
+    - set --> definir o valor da variavel
+
+Padroes (convensao)
+- Classes: Maiuscula. cammelCase
+- Variaveis: Minuscula, cammelCase
+
+
+compilacao
+----------------
+--> javac NomeDaClasse.java
+
+Exercutar
+----------------------
+--> java NomeDaClasse
+
+Pacotes e Importacao
+- Para imporatr o bando todo coloque (*)
+- A declaracao do pacote deve ser a primeira instrucao da classe
+- Quando as classes não estiverem no mesmo pacote, precisamos
+- Os imports vem logo apos a declaracao do pacote
+
+Modificadores de acesso (variaveis. metodos e classes)
+    - public (pode ser acessado de qualquer lugar)
+    - protected (só pode ser acessado pelos filhos)
+    - package default (só são acessiveis por classe dentro do mesmo pacote) 
+    - private (só pode ser acessado dentro da prorpia classe)
+    - static (pertence a classe)
+
+    - final 
+        - variaveis: não podem ser alterados
+        - metodos: não podem ser sobrescritos
+        - classe: não podem ser extendidos
+
+Construtores
+----------------
+Usados para monstar o objeto (construir) 
+    - podemos definir quais serem as regras para montar nosso objeto
+    - Quando não definimos um construtor, temos um vazio por padrao
+
+This
+-------------
+Usando para acessar as variaveis e metodos membros da classe. Com isso, 
+podemos diferenciar variaveis locais com o mesmo nome.
+
+MOdificador Abstract
+- Uma classe só pode extender apenas uma classe
+- em classes: 
+    - a classe não pode ser instanciada (new ...)
+- em metodos: 
+    - são metodos sem corpo que todos os filhos devem implementar
+    - Os filhps são obrigados a implementar
+    - só podemos ter metodo Abstract e, classes Abstract
+
+Sobrescrita de metodos (Override = Substituir)
+    - É quando a subClasse altera o comportamento do metodo que está no pai
+
+Sobregarga de metodos (Overload = Sobregarga)
+    - É quando temos mais de um metodo com o mesmo nome, onde eles são diferenciados pela
+    qauntidade ou tipos dos parametros 
+
+
+Interface:
+    - É uma classe abstrata, porque ela só tem metodos Abstracts
+    - Todo metodo em uma interface é public
+    - Só tem variaveis membro que são public static final 
+    - Uma classe pode implementar mais de uma interface
+    - Não pode ser instanciado (new...)
+    - Podem ter metodos concretos, desde que sejam com o modificador default
+
+Polimorfismo:
+    - Cliche --> É uma classe que assume varias formas (NÃO RESPONDER EM EMPREGO);
+    - É quando usamos a interface ou classe pai como referencia na construcao 
+    de sistemas com programacao com POD (RESPONDER EM EMPREGO).
+
+
+Composicao:
+    - Em linha gerais, é quando utilizamos interfaces como variaveis membros de classe, 
+    Nesse caso devemos criar um construtor para que a classe concreta seja 
+    informada na execucao do programa. 
+
+Classe Object:
+    - Pai de todas as classes
+    - É implicito
+
+Expressão Lambda:
+    - É uma forma de implementar uma interface em tempo de execucao.
+    Para isso nós precisamos que a interface seja uma FunctionalInterface.
+    - Ela aloca uma thread excluviva para a execucao da mesma.
+    - As variaveis devem ser efetivamente final.
+
+FunctionalInterface:
+    - São interfaces que possuem apenas um metodo Abstract
+    - Ela pode ter metodos default
+
+Generics:
+    -É uma de definir o tipo de um objeto dentro de uma classe ma hora de instanciar o objeto.
+    com isso, evitamos erros de ClassCastException
+    - Exemplo: Optional, List
+    - funciona com um Coringa *
+
+Collections:
+    - Map: Mapa de chave e valor -> Map<T, K>
+    - SertList: Armazena valores únicos. (não repete valores)
+    - LinkedList: Cada elementos guarda a referencia de quem esta na sua frente. (lemento tras - novo elemento)
+
+Exceptions:
+    - Um erro não tratado para o programa é interrompido.
+    - Block try catch: Usamos para tratar possiveis erros.
+        - Tudo que está no try após linha do erro, não será executado.
+    - Checked Exception precisam der tratadas obrigatoriamente.
+
+Meta programação:
+    - Reflections(introspecsão): 
+    - Anotetion: *perde performace*
+
+Classpath:
+    - Arquivo manifesta com o caminho das classes. só assim uma classe consegue chamar outra.
+
+Jar:
+    - É um arquivo compacto com todos os arquivos.class organizados para executar o programa.
+
+Biblioteca:
+    - Utilizamos programas java (.jar) de terceiros para complementar nosso código.
+
+--------------------
+Por que usar enum?
+Para limitar o valor de um texto, evitando assim valores incosistentes
+
+- Termo on the fly
+
+
+minhas perguntas:
+1 - nome da classe pode chamar pai? (quando fazer herança)
+2 - 
+
+
+Perguntas entrevistas:
+?O que é Garbage Collector (GC)?
+- Garbage Collector (GC) limpa a memoria dos objetos que perdem a referencia.
+
+?Por que usar uma lambda?
+- Uso uma lambda pois ela é mais performatica, pois ela usa uma thread sepada.
+
+?Qual a diferença de um List para um SetList?
+- SetList: Armazena somente valores unicos.
+- List: 
+
+?Qual a diferença de um List para um LinkedList?
+- List: Ao adicionar um elemento no meio da lista, precisa-se emburar todo elemento que esta a frente.
+- LinkedList: Ao adicionar um elemento na meio da lista, só muda o posicionamento do elemento da frente. (elemento tras - novo elemento)
+
+
+ANOTAÇÃO (PASSAR PARA O CADERNINHO)
+- codigo universal (UUID)
+    - identificador universal
+
+- Quando usar o ENUM?
+    - use o ENUM para limitar uma informação (informações constantes)
+
+- quando montar um sistema, primeiro faz o basico e verificar se funciona, depois coloque os valores incosistentes.

@@ -1,0 +1,6 @@
+
+Maria[0]-> Jose[1] > Pedro[2] -> Jonas[3] -> Henrique[4] -> carlos[5]
+
+Precisa-se avisar o Pedro que o novo elemento(nome) na frente dele, agora é o João.
+
+Maria[0] -> Jose[1] -> Pedro[2] -> João[3] -> Jonas[4] -> Henrique[5] -> carlos[6]

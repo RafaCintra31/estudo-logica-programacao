@@ -1,0 +1,37 @@
+CARDINALIDADE:
+
+pessoas 1* -> contas
+    id pessoa = 123
+
+    conta poupança
+        id = 10, id_pessoa = 123
+
+    conta corrente
+        id = 20, id_pessoa = 123
+
+contas 1 -> 1 pessoas
+
+    conta corrente 
+        id = 20
+    
+    pessoas
+
+Relacionamento: muitos x muitos 
+endereço ** -> **pessoas
+
+Criar uma tabela associativa
+
+pessoas_endereço (
+    id_pessoa
+    id_endereco
+)
+
+Produto - Nota fiscal
+
+item_nota_fiscal(
+    id_produto
+    id_nota_fiscal
+    quantidade
+    desconto
+)
+

@@ -1,0 +1,17 @@
+Indices
+
+CREATE TABLE pessoas (
+    id 					BIGINT 			NOT NULL AUTO_INCREMENT 			,
+    nome 				VARCHAR(100) 	NOT NULL							,
+    data_nascimento 	DATE 			NOT NULL							,
+    documento 			VARCHAR(11) 	NOT NULL							,
+    data_criacao 		TIMESTAMP 		NOT NULL 							,
+    email				VARCHAR(255)	NOT NULL UNIQUE						,
+    PRIMARY KEY (id)
+);
+
+select * from pessoas p where p.id = 1000;
+0 - 10_000
+
+select * from pessoas p where p.id = 11000;
+10_001 - 20_000

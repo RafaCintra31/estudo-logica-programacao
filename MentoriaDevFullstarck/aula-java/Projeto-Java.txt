@@ -1,0 +1,14 @@
+- Cadastro
+    -Cadastrar conta
+- Relatorios 
+    - Lista clientes black (saldo acima de 10k)
+- Caixa
+    - sacar
+    - depositar
+    - transferirir
+- Investimento (opcional)
+    - listar produtos
+
+
+Obs:
+todos as operações serão salvas em um arquivo texto

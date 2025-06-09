@@ -1,0 +1,30 @@
+        ESTRUTURA BACISA DE UMA CLASSE
+
+
+public class ContaBancaria{
+
+    // membros
+    private Integer numeroConta;
+    private Float saldo;
+
+    public ContaBancaria(){}
+
+    //encapsulamento - getters
+    public Integer getNumeroConta(){
+        return numeroConta;
+    }
+
+    public Float getSaldo(){
+        return saldo;
+    }
+
+    //encapsulamento - setters
+    public void setNumeroConta(Integer numeroConta){
+        this.numeroConta = numeroConta;
+    }
+
+    public void setSaldo(Float saldo){
+        this.saldo = saldo;
+    }
+
+}
