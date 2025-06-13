@@ -1,0 +1,85 @@
+INTEGRAÇÃO ENTRE SISTEMAS
+-------------------------
+
+- Como o c# da empresa conversa com o java da empresa b
+    - Rest -> Convenção
+
+- O que vamos expor do nosso sistema -> CRUD
+
+- Request ---->             <------- Response
+
+REST APIs
+---------
+
+Tipos de dados que se trafegam em REST:
+    - No fim tudo é string (texto)
+    - Protocolo: HTTP (Hyper text transfer protocol)
+    - Formatos:
+        - json (Vai aspas("") na variavel)
+            -Objeto:
+            {
+                "name": "mikasa"
+            }
+            -Array:
+            {
+                [
+                    "idade": 43
+                ]
+            }
+
+METHODS (VERBOS HTTP)
+    - GET    -> Para obter dados   (CRUD - Read)
+    - POST   -> Para inserir dados (CRUD - Create)
+    - PUT    -> Para alterar dados (CRUD - Updadte)
+    - DELETE -> Para deletar dados (CRUD - Delete)
+    - PATH   -> Updadte / Delete
+
+URL:
+    - Protocolo, host(host:porta), path 
+
+    Exemplo do viacep:
+        http://viacep/ws/json/02343030
+        - Cada serviço tem seu proprio path
+        - POdemos ter mesmo path, porém, verbos diferentes
+
+    - Path dinamico (variaveis)
+        http://viacep.com.br/ws/02343030/json
+        http://viacep.com.br/ws/02010200/json
+
+URI = path
+HOST 
+URL = HOST + URI
+
+Query parameters (São parametros como nos metodos)
+    Protocolo,host,path?chave=valor&chave2=valor2
+    http://pokeapi.co/api/v2/ability/?limit=3&offset=1
+
+Path parameter  (Faz parte da URL)     -> Informações obrigatorias
+Query parameter (Não faz parte da URL) -> Pode ser opcional
+
+HEADERS (Dados ou metadados da requisição)
+    - Token de autorização
+    - Tipo de dado que você receber (content-type)
+
+Corpo da resposta
+    - RequestBody
+    - ResponseBody
+
+Quando chamamos uma API Rest, recebemos código de resposta.
+
+StatusResponse
+--------------
+
+2xx -> São códigos de sucesso
+    - 200 -> OK         (O get da informação deu certo)
+    - 201 -> CREATED    (Quando inserimos um dado com sucesso)
+    - 204 -> NO CONTENT (Deu certo e não tem nada para retornar)
+
+4xx -> Tem um erro no seu Request
+    - 400 -> BAD REQUEST (A montagem do seu request está errada)
+    - 401 -> UNAUTHRIZED (Você não tem acesso a este recurso)
+    - 403 -> FORBIDEN    (você está logado, mas não tem acecesso a este serviço)
+    - 404 -> NOT FOUND   (O recurso não existe. Pode ser URL)
+
+5xx -> Seu request está correto, mas ocorreu um erro interno aqui
+    - 500 -> INTERNAL SERVER ERROR

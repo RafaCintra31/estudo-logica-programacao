@@ -63,3 +63,10 @@ Joins:
     -> right join
     -> inner join (Mas restritivo)
     -> outer join (left join e right join juntos)
+
+Indices:
+select * from pessoas p where p.id = 1000;
+0 - 10_000
+
+select * from pessoas p where p.id = 11000;
+10_001 - 20_000
