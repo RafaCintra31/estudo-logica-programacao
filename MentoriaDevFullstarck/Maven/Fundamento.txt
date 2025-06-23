@@ -1,0 +1,48 @@
+MAVEN (apache)
+-----
+
+- Cuidar do classpath
+- Gerenciar as dependencias de projeto (libs externas)
+- Determina a estrutura do projeto
+
+- Config maven
+    -> pom.xml (fica na raiz do projeto, é o coração)
+    -> .m2     (diretorio onde ficam as libs externas)
+    -> target  (diretorio em que fica nosso codigo compilado)
+
+Comandos (goals)
+    - mvn clean   (Limpa a target)
+    - mvn compile (Compila o codigo)
+    - mvn package (Gera o jar na target)
+
+Estrutura pasta
+    - SRC
+        - MAIN
+            - JAVA
+            - RESOURCES
+        - TEST   
+            - JAVA
+            - RESOURCES
+
+Spring Boot
+    - Gerencia as dependencias de projeto
+    - Configura coisas comuns automaticamente
+        - Ele configura um servidor tomcat automaticamente
+        - ele configura seu banco de dados 
+
+Spring Framework
+    - Coração (container da aplicação)
+
+Spring Data
+    -
+
+Vamos usar padão MVC - Model View Controller
+
+Controller
+    - Onde ficam nossos endpoints ()
+    - 
+
+
+
+Pergunta de entrevista
+?Qual a diferença entre o Spring Boot para o Spring Framework?

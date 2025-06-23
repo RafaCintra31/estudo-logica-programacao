@@ -113,3 +113,6 @@ BETWEEN '2025-05-30 00:00:00' AND '2025-05-31 23:59:59';
 -- Retorna o menor valor de uma coluna e Retorna o maior valor de uma coluna.
 SELECT MIN(c.saldo) FROM contas c;
 SELECT MAX (c.saldo) FROM contas c;
+
+-- INFORMAÇÕES IMPORTANTES
+-- NÃO SE PODE USAR MAIS QUE 1 WHERE

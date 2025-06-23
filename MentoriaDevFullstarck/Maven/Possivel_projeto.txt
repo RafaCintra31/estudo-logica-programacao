@@ -1,0 +1,10 @@
+SISTEMA DE CONDOMÍNIOS (MVP)
+----------------------------
+
+- Fazer o controle de contas pagas
+- Serviços de melhorias executados / a executar
+- Consultar pagamentos
+- Gerar boleto de pagamento
+- Consultar saúde financeira do condomínio
+
+MVP -> Minimum Viable Product
