@@ -22,9 +22,9 @@
 
 -> git add . (O ponto coloca todos na stanging area)
 
--> git chekckout -b nome-da-nova-branch | (criar uma branch paralela a original)
+-> git checkout -b nome-da-nova-branch | (criar uma branch paralela a original)
 
--> git chekckout nome-da-branch| (entrar na branch)
+-> git checkout nome-da-branch| (entrar na branch)
 
 -> git push (Manda os commit local para o remoto)
 

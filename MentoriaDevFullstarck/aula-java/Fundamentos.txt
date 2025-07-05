@@ -86,6 +86,7 @@ Interface:
     - Uma classe pode implementar mais de uma interface
     - Não pode ser instanciado (new...)
     - Podem ter metodos concretos, desde que sejam com o modificador default
+    - Uma interface pode exterder outra interface
 
 Polimorfismo:
     - Cliche --> É uma classe que assume varias formas (NÃO RESPONDER EM EMPREGO);

@@ -1,0 +1,21 @@
+Gestão Condomínios
+-------------------
+
+- Gestão de Usuários:
+
+- Destão de Despesas:
+    - Cadastro Despesas
+        - Despesas recorrentes
+
+- Gestão de Apartamentos CRUD
+
+- Gestão de Receitas:
+    - Listar receitas
+    - Alterar receita
+    - Detlhetar receita
+    - Excluir receita
+    - Cadastro receitas
+        - Receitas recorrentes
+        - Receber em lote (pagamento Condomínios)
+
+MPV - Minimmum Viable Product

@@ -1,0 +1,13 @@
+- Quando tiver 2 beans (implementação), qualificar com @Primary a implementação que vai ser a principal.
+- Hikari -> cuida do pool de conexões, e da gestões de conexões do banco de dados.
+
+
+-- Perguntas e dicas de entrevistas.
+
+?Qauis são as formas de injeção de dependencia que você conhece?
+- construtor e 
+?Como fazer injeção de dependencia usando um objeto que não são nossas?
+- faça uma classe de configuração, instancie na mão o metodo e anote o metodo com @bean e @Configuration
+
+?Como falar em uma entrevista que voce sabe fazer mapeamento entidade relacional.
+Eu tambem sei fazer mapeamento entidade relacional utilizando a biblioteca Hibernate
