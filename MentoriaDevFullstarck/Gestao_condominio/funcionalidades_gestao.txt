@@ -2,6 +2,7 @@ Gestão Condomínios
 -------------------
 
 - Gestão de Usuários:
+    - Permissao de acesso
 
 - Destão de Despesas:
     - Cadastro Despesas
@@ -17,5 +18,7 @@ Gestão Condomínios
     - Cadastro receitas
         - Receitas recorrentes
         - Receber em lote (pagamento Condomínios)
+
+- Gestão de Seviços prestados
 
 MPV - Minimmum Viable Product
