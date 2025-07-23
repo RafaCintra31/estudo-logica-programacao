@@ -1,0 +1,23 @@
+Flyway
+--------------------
+- Controle e versionamento das alterações no banco de dados
+
+Similares ao Flyway:
+    - Liquibase
+    - Prisma
+    - Squitch
+
+?Se em uma entrevista perguntar se sabe usar algumas dessas a cima, 
+só falar que não sabe, mas sabe usar o Flyway?
+
+
+
+Passos para configurar o Flyway
+------------------------------------
+
+1- Add dependencias no pom 
+2- Criar o diretorio db em resources
+3- Criar o diretorio migration em db
+4- Adicionar as migrations
+    Regras:
+    - V (maiusculo) seguido de 2 underscore( _ )
