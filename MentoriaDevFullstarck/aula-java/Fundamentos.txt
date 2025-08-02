@@ -134,6 +134,10 @@ Meta programação:
     - Reflections(introspecsão): 
     - Anotetion: *perde performace*
 
+Meta Dado:
+    - Dado gerado apartir de uma informação.
+    - Pode ser deletado a qualquer momento. 
+
 Classpath:
     - Arquivo manifesta com o caminho das classes. só assim uma classe consegue chamar outra.
 
